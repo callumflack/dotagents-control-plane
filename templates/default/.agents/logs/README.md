@@ -1,6 +1,8 @@
 # Agent Logs
 
-Use `.agents/logs/` for session receipts only.
+Use `.agents/logs/` for session orientation notes.
+
+Logs preserve what the agent was trying to do, what decisions were made, what checks mattered, and where the next agent should resume. They are not commit ledgers, changelogs, or proof of what shipped. Git remains the source of truth for commits, diffs, and exact file history.
 
 ## When To Write
 
@@ -14,14 +16,14 @@ Write or update a log when:
 
 ## Create Vs Update
 
-Update the current slice receipt when:
+Update the current session note when:
 
 - fixing review findings in the same slice;
 - running extra checks;
 - making small cleanup before the same commit;
 - applying reviewer or skill feedback without changing scope.
 
-Create a new receipt when:
+Create a new session note when:
 
 - starting a new product slice;
 - changing router, resolver, gate, skill, or log doctrine;
@@ -34,7 +36,7 @@ Do not write a receipt for:
 - pure formatting after checks;
 - transient investigation with no durable change.
 
-Default receipt target: the newest `.agents/logs/*execution*.md` for the active slice.
+Default log target: the newest `.agents/logs/*execution*.md` for the active slice.
 
 ## Closeout
 
@@ -44,11 +46,12 @@ If the work produced a reusable lesson, capture it in `history/solutions/<slug>.
 
 Each log should include:
 
-- date;
-- branch;
-- changed files;
-- checks run;
+- session intent;
+- branch/worktree;
+- touched surfaces;
+- checks/probes run;
 - decisions made;
+- unresolved questions;
 - next pointer.
 
 ## Boundaries

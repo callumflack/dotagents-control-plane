@@ -10,4 +10,5 @@ Done means:
 - local-only host surfaces such as `.pi/` stay ignored unless user explicitly asks;
 - `skills-lock.json` matches the intended installed skill set;
 - `AGENTS.md` stays short and points to `.agents/`;
+- if the work produced a reusable lesson, capture it in `history/solutions/<slug>.md`;
 - `git status --short --ignored` shows no accidental local-only staged files.

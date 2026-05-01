@@ -11,4 +11,5 @@ Done means:
 - `skills-lock.json` matches the intended installed skill set;
 - `AGENTS.md` stays short and points to `.agents/`;
 - if the work produced a reusable lesson, capture it in `history/solutions/<slug>.md`;
+- one-off project plans and execution evidence live in `history/`; do not create `.agents/resolvers/*` or `.agents/gates/*` for single-use work; promote only repeatable routing rules, done checks, or skills into `.agents/`;
 - `git status --short --ignored` shows no accidental local-only staged files.

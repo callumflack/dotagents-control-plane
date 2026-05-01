@@ -20,8 +20,8 @@ const requiredFiles = [
   ".agents/gates/README.md",
   ".agents/gates/agent-tooling.md",
   ".agents/gates/rule-rinse.md",
-  ".agents/skills/dotagents-control-plane/SKILL.md",
-  ".agents/skills/dotagents-control-plane/scripts/check-dotagents-health.py",
+  ".agents/skills/agents-kit/SKILL.md",
+  ".agents/skills/agents-kit/scripts/check-agents-kit-health.py",
   ".agents/logs/README.md",
   "history/solutions/README.md",
 ]
@@ -47,7 +47,7 @@ if (missing.length > 0) {
 }
 
 const health = spawnSync("python3", [
-  path.join(templateRoot, ".agents/skills/dotagents-control-plane/scripts/check-dotagents-health.py"),
+  path.join(templateRoot, ".agents/skills/agents-kit/scripts/check-agents-kit-health.py"),
 ], {
   cwd: templateRoot,
   encoding: "utf8",

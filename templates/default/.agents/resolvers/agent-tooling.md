@@ -12,7 +12,7 @@ Use for `AGENTS.md`, `.agents/**`, `history/solutions/**`, `.claude/**`, `.pi/**
 - `.agents/README.md`
 - `.agents/AGENT-CONTROL-PLANE.md` when changing `.agents/` structure, placement, or doctrine
 - `.agents/router.md`
-- `.agents/skills/dotagents-control-plane/SKILL.md` when changing `.agents` control-plane behavior
+- `.agents/skills/agents-kit/SKILL.md` when changing `.agents` control-plane behavior
 - relevant skill or host directory
 - `history/solutions/README.md` when changing captured-learning behavior
 - `skills-lock.json` when skill inventory changes

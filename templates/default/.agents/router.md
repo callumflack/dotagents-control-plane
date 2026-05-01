@@ -6,7 +6,7 @@ Resolver rows are dispatch rules. Gates decide done. Draft resolvers/gates must 
 
 | Trigger | Resolver | Gate | Skill |
 | --- | --- | --- | --- |
-| agent tooling, `.agents` control-plane, skills, OpenSpec, Claude/Codex surfaces | `.agents/resolvers/agent-tooling.md` | `.agents/gates/agent-tooling.md` | `dotagents-control-plane` for `.agents` changes; otherwise matching `.agents/skills/*` |
+| agent tooling, `.agents` control-plane, skills, OpenSpec, Claude/Codex surfaces | `.agents/resolvers/agent-tooling.md` | `.agents/gates/agent-tooling.md` | `agents-kit` for `.agents` changes; otherwise matching `.agents/skills/*` |
 | resolver/gate quality pass | `.agents/resolvers/rule-rinse.md` | `.agents/gates/rule-rinse.md` | none by default |
 
 ## Priority Rules

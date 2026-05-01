@@ -1,11 +1,11 @@
 {
-  "name": "dotagents-control-plane",
+  "name": "agents-kit",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "Repo-local .agents control-plane seed and installer.",
   "bin": {
-    "dotagents-control-plane": "bin/dotagents-control-plane.mjs"
+    "agents-kit": "bin/agents-kit.mjs"
   },
   "files": [
     "bin/",

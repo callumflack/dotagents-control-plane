@@ -10,18 +10,18 @@ const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 const templateRoot = path.join(repoRoot, "templates", "default")
 
 function usage() {
-  console.log(`dotagents-control-plane
+  console.log(`agents-kit
 
 Usage:
-  dotagents-control-plane init [target] [--target <path>] [--force] [--dry-run]
-  dotagents-control-plane adopt [target] [--target <path>] [--dry-run]
+  agents-kit init [target] [--target <path>] [--force] [--dry-run]
+  agents-kit adopt [target] [--target <path>] [--dry-run]
 
 Examples:
-  dotagents-control-plane init
-  dotagents-control-plane init --target /path/to/repo
-  dotagents-control-plane init /path/to/repo --dry-run
-  dotagents-control-plane adopt --target /path/to/repo
-  dotagents-control-plane adopt /path/to/repo --dry-run
+  agents-kit init
+  agents-kit init --target /path/to/repo
+  agents-kit init /path/to/repo --dry-run
+  agents-kit adopt --target /path/to/repo
+  agents-kit adopt /path/to/repo --dry-run
 `)
 }
 
@@ -149,7 +149,7 @@ async function init(options) {
   }
 
   if (conflicts.length > 0 && !options.force) {
-    console.error("dotagents install refused to overwrite existing files:")
+    console.error("agents-kit install refused to overwrite existing files:")
     for (const conflict of conflicts) console.error(`- ${conflict}`)
     console.error("\nReview the target repo, then rerun with --force only if replacement is intended.")
     process.exitCode = 1
@@ -167,7 +167,7 @@ async function init(options) {
   }
 
   if (!options.dryRun) {
-    console.log("\nInstalled dotagents control plane.")
+    console.log("\nInstalled agents-kit control plane.")
     console.log("Next: edit .agents/active-work.md, localize .agents/router.md, run the health check, and review the diff.")
   }
 }
@@ -216,7 +216,7 @@ async function adopt(options) {
   }
 
   if (!options.dryRun) {
-    console.log("\nAdopted missing dotagents files.")
+    console.log("\nAdopted missing agents-kit files.")
     console.log("Next: run the health check, review skipped files, and commit explicit paths.")
   }
 }

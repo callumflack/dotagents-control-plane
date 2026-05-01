@@ -88,7 +88,7 @@ A skill is technique, not law.
 
 Use skills for repeatable procedure, tool use, bundled references, scripts, and specialized judgment. Do not use skills to hide repo routing rules. A skill can help execute a resolver, but the resolver owns whether the skill belongs.
 
-Generic skill design is a baseline, not the repo-local control-plane rule. `skill-creator` teaches skill packaging. `.agents/skills/dotagents-control-plane` teaches safe surgery on this repo's router, resolvers, gates, skills, logs, history, and solutions.
+Generic skill design is a baseline, not the repo-local control-plane rule. `skill-creator` teaches skill packaging. `.agents/skills/agents-kit` teaches safe surgery on this repo's router, resolvers, gates, skills, logs, history, and solutions.
 
 Generic skill design is not enough. Repo-local skill design must ask:
 

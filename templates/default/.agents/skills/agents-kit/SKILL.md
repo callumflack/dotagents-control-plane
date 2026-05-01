@@ -1,9 +1,9 @@
 ---
-name: dotagents-control-plane
+name: agents-kit
 description: Maintain a repo-local .agents control plane. Use when creating, reviewing, or editing AGENTS.md, .agents/router.md, .agents/resolvers, .agents/gates, .agents/skills, .agents/logs, history/solutions, or the agent-control-plane doctrine.
 ---
 
-# Dotagents Control Plane
+# Agents Kit
 
 Use this skill for safe surgery on this repo's local `.agents` system.
 
@@ -47,7 +47,7 @@ Skills hold technique, not law. Resolvers own routing and scope. Gates own done 
 8. Run the health check when router, resolver, gate, skill, or captured-learning structure changes:
 
 ```bash
-python3 .agents/skills/dotagents-control-plane/scripts/check-dotagents-health.py
+python3 .agents/skills/agents-kit/scripts/check-agents-kit-health.py
 ```
 
 9. Write a receipt in `.agents/logs/`.

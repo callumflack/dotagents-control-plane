@@ -136,12 +136,12 @@ def main() -> int:
     check_skills(errors)
 
     if errors:
-        print("dotagents health: FAIL")
+        print("agents-kit health: FAIL")
         for error in errors:
             print(f"- {error}")
         return 1
 
-    print("dotagents health: PASS")
+    print("agents-kit health: PASS")
     return 0
 
 
